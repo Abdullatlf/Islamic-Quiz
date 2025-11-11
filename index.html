@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Game</title>
+    <title> وقت التحدي !</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class ="container">
 
-        <div class = "screen active" id= = "start-screen">
-            <h1>Quiz time!</h1>
-            <p>Test your knowledge with these fun questions</p>
-            <button id = "start-btn">Start Quiz</button>
+        <div class = "screen active" id= "start-screen">
+            <h1>!وقت التحدي</h1>
+            <p>تحدّى نفسك بهذه الأسئلة الدينية المفيدة</p>
+            <button id = "start-btn">ابدأ الاختبار</button>
         </div>
 
-        <div class = "screen" id = "Quiz-screen">
+        <div class = "screen " id = "quiz-screen">
             <div class = "quiz-header">
                 <h2 id="question-text">question goes here</h2>
 
                 <div class = "quiz-info">
                     <p>
-                        Queston <span id = "current-question">1</span> of <span>5</span>
+                        أسئلة : <span id = "current-question">1</span> من <span id = "total-questions">5</span>
                     </p>
 
                     <p>
-                        Score: <span id = "score">0</span>
+                        النتيجة : <span id = "current-score">0</span> من <span id = "total-score">5</span>
                     </p>
 
 
@@ -42,13 +42,13 @@
             </div>
         </div>
 
-        <div class = "screen" id = "result-screen">
-            <h1>Quiz Results</h1>
+        <div class = "screen " id = "result-screen">
+            <h1>!نتيجة التحدي</h1>
             <div class = "result-info">
-                <p> You scored <span id = "final-score">0</span> out of <span id = "max-score">5</span></p>
-                <div id = "result-massage"> massage goes here</div>
+                <p> لقد حققت <span id = "final-score">0</span> من <span id = "max-score">5</span></p>
+                <div id = "result-message"> massage goes here</div>
             </div>
-            <button id = "restart-btn">Restart Quiz</button>
+            <button id = "restart-btn">أعد المحاولة</button>
         </div>
 
 
@@ -56,4 +56,5 @@
     </div>
     
 </body>
+<script src = "script.js"></script>
 </html>
